@@ -20,6 +20,78 @@
         <div class="middle" id="middle">
         </div> 
         <div class="bottom" id="bottom">
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="IMG_0020.jpg" style="width:100% ">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="IMG_0022.JPG" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="IMG_2843_Original.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="IMG_0043.JPG" style="width:100%">
+              </div>
+
+            <div class="mySlides fade">
+                <img src="IMG_3980.PNG" style="width:100%">
+              </div>
+
+            <div class="mySlides fade">
+                <img src="IMG_3981.PNG" style="width:100%">
+              </div>
+
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+        
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            var i;
+             var slides = document.getElementsByClassName("mySlides");
+             for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+             slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+            </script>
+            
           <p class="padding">MEET THE BOARD</p>
         </div> 
         
