@@ -12,7 +12,6 @@
     margin-right: 2vw;
     margin-bottom: 2vw;
     float: right;
-    display: block;
     color: #E8AC36;
     text-align: center;
     padding: 1vw 1vw;
@@ -35,9 +34,18 @@
 }
 
  .bottom{
-    background-position: left;
-    background-color: #74a5bc;
-    width: 50vw;
+    background: linear-gradient(90deg, #b6edff 50%, #74a5bc 50%);
+    width: 100vw;
     height: 100vw;
-}
+    text-align: right;
+    font-size: 2.5vw; 
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    color: white;
+ }
 
+ p.padding {
+    padding-top: 5vw;
+    padding-right: 10vw;
+    
+  }
