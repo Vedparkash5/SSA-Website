@@ -78,12 +78,10 @@
   }
    /* Slideshow container */
 .slideshow-container {
-   max-width: 20vw;
-   /* position: relative; */
-   padding-top: 5vw;
+    max-width: 40vw;
+    position: relative; 
    
  }
- 
  
  /* Fading animation */
  .fade {
