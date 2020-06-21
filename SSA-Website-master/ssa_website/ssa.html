@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel ="stylesheet" href="styles.css">
         <title>UCSD SSA</title>
     </head>
     <body>
         <div class="topnav" id="myTopnav">
-            <a href="#Home"><img src="logo.png" alt="logo" style="position: absolute; left:5px; top:8px; width:85px; height:84px;"
+            <a href="#Home"><img src="logo.png" alt="logo" style="position: absolute; left:5px; top:8px; width:6.8vw; height:6.8vw;"
             ></a>
             <a href="#Make a Post" class="active">Make a Post</a>
             <a href="#Contact Us">Contact Us</a>
             <a href="#Events Calendar">Events Calendar</a>
-            <a href="#Member Posts">Member Posts</a>
+            <a href="#Recent Posts By Members">Recent Posts</a>
             <a href="#Home">Home</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
@@ -19,38 +20,44 @@
         </div>
         <div class="middle" id="middle">
         </div> 
+       
         <div class="bottom" id="bottom">
-          <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <img src="IMG_0020.jpg" style="width:100% ">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="IMG_0022.JPG" style="width:100%">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="IMG_2843_Original.JPG" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="IMG_0043.JPG" style="width:100%">
+          <div class="row no-gutters">
+            <div class="col-md-6 no-gutters">
+              <div class="leftside">
+                <div class="slideshow-container">
+                  <div class="mySlides fade">
+                    <img src="IMG_0020.jpg" style="width:100% ">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="IMG_0022.JPG" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="IMG_2843_Original.JPG" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                      <img src="IMG_0043.JPG" style="width:100%">
+                    </div>
+                  <div class="mySlides fade">
+                      <img src="IMG_3980.PNG" style="width:100%">
+                    </div>
+                  <div class="mySlides fade">
+                      <img src="IMG_3981.PNG" style="width:100%">
               </div>
-
-            <div class="mySlides fade">
-                <img src="IMG_3980.PNG" style="width:100%">
+            </div> 
+          </div>
+        </div>
+            <div class="col-md-6 no-gutters">
+              <div class="rightside">
+                <p class="padding">MEET THE BOARD</p> 
               </div>
-
-            <div class="mySlides fade">
-                <img src="IMG_3981.PNG" style="width:100%">
-              </div>
-
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <br>
+            </div>
+          </div>
+    
+            
+
+      
             
         
             <script>
@@ -91,8 +98,6 @@
             setTimeout(showSlides, 3000); // Change image every 3 seconds
             }
             </script>
-            
-          <p class="padding">MEET THE BOARD</p>
         </div> 
         
     </body>
