@@ -17,7 +17,7 @@
  }
 /*styles the middle portion with the picture*/
 .middle{
- background-image: url(welcomePic.jpg);
+ background-image: url(img/welcomePic.jpg);
  background-repeat: no-repeat;
  background-size:contain;
  background-size: 100vw;
