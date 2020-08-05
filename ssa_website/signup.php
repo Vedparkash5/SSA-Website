@@ -11,37 +11,33 @@ if($conn->connect_error){
 	die("connection failed");
 }
 
+// if(isset($_POST['signUp']))
+// {
+	// $name = ($_POST["name"]);
+	// $email = ($_POST["email"]);
+	// $salt = "random"
+	// $password = $_POST(['password']).$salt;
+	// $password = sha1($password);
 
-$name = $_POST["name"];
-$email = $_POST["email"];
-$password = $_POST["password"];
-$salt = "ssa";
-$password_encrypted = sha1($password.$salt);
-
-$sql = "INSERT INTO members (name, email, password) 
-VALUES ('$name', '$email', '$password_encrypted')";
+	$sql = "INSERT INTO ssa.members (name, email, password) 
+	VALUES ('$_POST[name]', '$_POST[email]', '$_POST[password]')";
 
 if($conn->query($sql) === TRUE){
 	?>
 	<script>
-		alert('Values have been inserted');
+		alert('Values have been inserted!! Yay! ');
 	</script>
 	<?php
 }
 else{
 	?>
 	<script>
-		alert('Values did not insert');
+		alert('Values did not insert :(');
 	</script>
 	<?php
 }
-
-
-
-
-
-
-
+	
+// }
 
 
 
